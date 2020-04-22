@@ -319,6 +319,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Example3ds/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,7 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jnazario.Example3ds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -345,6 +346,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Example3ds/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,7 +357,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jnazario.Example3ds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

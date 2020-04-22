@@ -22,7 +22,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         btnAuthenticate.addTarget(self, action: #selector(authenticate), for: .touchUpInside)
-        
     }
     
     @objc func authenticate() {
