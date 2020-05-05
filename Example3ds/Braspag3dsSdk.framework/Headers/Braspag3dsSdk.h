@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char Braspag3dsSdkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Braspag3dsSdk/PublicHeader.h>
 
-#import <CardinalMobile/CardinalMobile.h>
+
