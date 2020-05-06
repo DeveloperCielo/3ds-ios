@@ -7,13 +7,13 @@
 //
 
 public class AuthenticationResponse: Codable {
-    var cavv: String?
-    var xId: String?
-    var eci: String?
-    var version: String?
-    var referenceId: String?
-    var returnCode: String?
-    var returnMessage: String?
+    public var cavv: String?
+    public var xId: String?
+    public var eci: String?
+    public var version: String?
+    public var referenceId: String?
+    public var returnCode: String?
+    public var returnMessage: String?
     
     init(cavv: String? = nil,
          xId: String? = nil,
