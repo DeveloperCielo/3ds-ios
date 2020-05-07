@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		68B214E72436091F00EAB32E /* Braspag3dsSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 68B214E52436091F00EAB32E /* Braspag3dsSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68B214EF2436097900EAB32E /* CardinalMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B214EE2436097900EAB32E /* CardinalMobile.framework */; };
-		68B214F02436097900EAB32E /* CardinalMobile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68B214EE2436097900EAB32E /* CardinalMobile.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		68B214F02436097900EAB32E /* CardinalMobile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68B214EE2436097900EAB32E /* CardinalMobile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68B21526243609ED00EAB32E /* RequestOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B214F4243609EC00EAB32E /* RequestOperations.swift */; };
 		68B21527243609ED00EAB32E /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B214F5243609EC00EAB32E /* Api.swift */; };
 		68B21528243609ED00EAB32E /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B214F6243609EC00EAB32E /* RequestType.swift */; };
