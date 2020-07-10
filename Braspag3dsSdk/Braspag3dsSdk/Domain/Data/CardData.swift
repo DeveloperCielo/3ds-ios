@@ -6,7 +6,7 @@
 //  Copyright © 2019 jnazario.com. All rights reserved.
 //
 
-public class CardData {
+public class CardData: Encodable {
     var number, expirationMonth, expirationYear: String
     var cardAlias: String?
     var defaultCard: Bool?
@@ -14,8 +14,8 @@ public class CardData {
     public init(number: String,
                 expirationMonth: String,
                 expirationYear: String,
-                cardAlias: String? = "",
-                defaultCard: Bool? = false) {
+                cardAlias: String?,
+                defaultCard: Bool?) {
         self.number = number
         self.expirationMonth = expirationMonth
         self.expirationYear = expirationYear

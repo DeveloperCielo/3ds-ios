@@ -8,13 +8,21 @@
 
 import Foundation
 
+public protocol SdkObject: Encodable {}
+
 extension Encodable {
     func toDict() -> [String: Any] {
         var dict = [String: Any]()
         let otherSelf = Mirror(reflecting: self)
         for child in otherSelf.children {
             if let key = child.label {
-                dict[key] = child.value
+                if let array = child.value as? [SdkObject] {
+                    dict[key] = array.map({ $0.toDict() })
+                } else if let objc = child.value as? SdkObject {
+                    dict[key] = objc.toDict()
+                } else {
+                    dict[key] = child.value
+                }
             }
         }
         return dict

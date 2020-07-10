@@ -6,11 +6,11 @@
 //  Copyright © 2019 jnazario.com. All rights reserved.
 //
 
-public class CartItemData: Codable {
+public class CartItemData: SdkObject, Codable {
     var name, description, sku: String?
     var quantity, unitPrice: Double?
     
-    init(name: String?, description: String?, sku: String?, quantity: Double?, price: Double?) {
+    public init(name: String?, description: String?, sku: String?, quantity: Double?, price: Double?) {
         self.name = name
         self.description = description
         self.sku = sku

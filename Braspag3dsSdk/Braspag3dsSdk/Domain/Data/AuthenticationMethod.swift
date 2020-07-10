@@ -6,9 +6,9 @@
 //  Copyright © 2019 jnazario.com. All rights reserved.
 //
 
-public enum AuthenticationMethod: Int {
-    case noAuthentication = 1
-    case ownStoreLogin = 2
-    case federatedLogin = 3
-    case fidoAuthenticator = 4
+public enum AuthenticationMethod: String, Encodable {
+    case noAuthentication = "01"
+    case ownStoreLogin = "02"
+    case federatedLogin = "03"
+    case fidoAuthenticator = "04"
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2019 jnazario.com. All rights reserved.
 //
 
-public enum ProductCode: String {
+public enum ProductCode: String, Encodable {
     case hotel = "ACC"
     case financeAccount = "ACF"
     case checkAcceptance = "CHA"

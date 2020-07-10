@@ -6,7 +6,7 @@
 //  Copyright © 2019 jnazario.com. All rights reserved.
 //
 
-public class UserData {
+public class UserData: Encodable {
     var guest: Bool?
     var createdDate: String?
     var changedDate: String?

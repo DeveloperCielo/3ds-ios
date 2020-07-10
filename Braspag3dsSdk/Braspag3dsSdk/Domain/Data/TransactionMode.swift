@@ -6,7 +6,7 @@
 //  Copyright © 2019 jnazario.com. All rights reserved.
 //
 
-public enum TransactionMode: String {
+public enum TransactionMode: String, Encodable {
     case moto = "M"
     case retail = "R"
     case eCommerce = "S"

@@ -6,7 +6,7 @@
 //  Copyright © 2019 jnazario.com. All rights reserved.
 //
 
-public enum PaymentMethod: String {
+public enum PaymentMethod: String, Encodable {
     case credit
     case debit
 }

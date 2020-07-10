@@ -6,7 +6,7 @@
 //  Copyright © 2019 jnazario.com. All rights reserved.
 //
 
-public class OptionsData {
+public class OptionsData: Encodable {
     var notifyOnly: Bool = false
     var suppressChallenge: Bool = false
     

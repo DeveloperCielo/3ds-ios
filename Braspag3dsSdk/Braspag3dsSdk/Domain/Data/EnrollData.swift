@@ -6,7 +6,7 @@
 //  Copyright © 2019 jnazario.com. All rights reserved.
 //
 
-class EnrollData: Codable {
+class EnrollData: Codable, SdkObject {
     var transactionId: String?
     var transactionMode: String?
 
@@ -33,7 +33,7 @@ class EnrollData: Codable {
 
     var cardAddedDate: String?
 
-    var billToCustomerId: Int?
+    var billToCustomerId: String?
     var billToContactName: String?
     var billToPhoneNumber: Int?
     var billToEmail: String?
@@ -44,7 +44,7 @@ class EnrollData: Codable {
     var billToZipCode: String?
     var billToCountry: String?
 
-    var shipToSameAddressAsBillTo: Bool?
+    var shipToSameAsBillTo: Bool?
     var shipToAddressee: String?
     var shipToPhoneNumber: Int?
     var shipToEmail: String?
@@ -69,13 +69,13 @@ class EnrollData: Codable {
     var orderCountLast1Year: Int?
     var orderCardAttemptsLast24Hours: Int?
     var orderMarketingOptin: Bool?
-    var orderMarketSource: String?
+    var orderMarketingSource: String?
 
     var userAccountGuest: Bool?
-    var userAccountCreateDate: String?
-    var userAccountChangeDate: String?
+    var userAccountCreatedDate: String?
+    var userAccountChangedDate: String?
     var userAccountPasswordChangedDate: String?
-    var userAccountAuthenticationMethod: Int?
+    var userAccountAuthenticationMethod: String?
     var userAccountAuthenticationProtocol: String?
     var userAccountAuthenticationTimestamp: String?
 
@@ -141,7 +141,7 @@ class EnrollData: Codable {
         billToZipCode = billToData?.zipCode
         billToCountry = billToData?.country
         
-        shipToSameAddressAsBillTo = shipToData?.sameAsBillTo
+        shipToSameAsBillTo = shipToData?.sameAsBillTo
         shipToAddressee = shipToData?.addresssee
         shipToPhoneNumber = shipToData?.phoneNumber
         shipToEmail = shipToData?.email
@@ -164,11 +164,11 @@ class EnrollData: Codable {
         orderCountLast1Year = orderData.countLast1Year
         orderCardAttemptsLast24Hours = orderData.cardAttemptsLast24Hours
         orderMarketingOptin = orderData.marketingOptIn
-        orderMarketSource = orderData.marketingSource
+        orderMarketingSource = orderData.marketingSource
         
         userAccountGuest = userData?.guest
-        userAccountCreateDate = userData?.createdDate
-        userAccountChangeDate = userData?.changedDate
+        userAccountCreatedDate = userData?.createdDate
+        userAccountChangedDate = userData?.changedDate
         userAccountPasswordChangedDate = userData?.passwordChangedDate
         userAccountAuthenticationMethod = userData?.authenticationMethod?.rawValue
         userAccountAuthenticationProtocol = userData?.authenticationProtocol

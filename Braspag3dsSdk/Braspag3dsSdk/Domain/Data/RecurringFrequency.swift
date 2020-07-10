@@ -6,7 +6,7 @@
 //  Copyright © 2019 jnazario.com. All rights reserved.
 //
 
-public enum RecurringFrequency: Int {
+public enum RecurringFrequency: Int, Encodable {
     case monthly = 1
     case bimonthly = 2
     case quarterly = 3

@@ -15,7 +15,7 @@ public class AuthenticationResponse: Codable {
     public var returnCode: String?
     public var returnMessage: String?
     
-    init(cavv: String? = nil,
+    public init(cavv: String? = nil,
          xId: String? = nil,
          eci: String? = nil,
          version: String? = nil,

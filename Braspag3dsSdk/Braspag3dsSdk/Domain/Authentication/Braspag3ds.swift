@@ -251,7 +251,6 @@ public class Braspag3ds: Braspag3dsProtocol {
             config.deploymentEnvironment = .staging
         }
 
-        config.deploymentEnvironment = .staging
         config.uiType = .both
 
         if let yourCustomUi = customUi {

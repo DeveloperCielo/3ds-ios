@@ -6,7 +6,7 @@
 //  Copyright © 2019 jnazario.com. All rights reserved.
 //
 
-public class OrderData {
+public class OrderData: Encodable {
     
     var orderNumber: String
     var currencyCode: String

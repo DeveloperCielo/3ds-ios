@@ -9,7 +9,7 @@
 public class DeviceData: Codable {
     var fingerPrint, provider: String
     
-    init(fingerPrint: String, provider: String) {
+    public init(fingerPrint: String, provider: String) {
         self.fingerPrint = fingerPrint
         self.provider = provider
     }

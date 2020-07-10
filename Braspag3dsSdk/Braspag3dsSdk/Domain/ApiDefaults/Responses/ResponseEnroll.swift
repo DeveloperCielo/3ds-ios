@@ -7,28 +7,28 @@
 //
 
 class ResponseEnroll: Codable {
-    var cardBrand: Int
+    var cardBrand: Int?
     var vEResEnrolled: String?
     var acsUrl: String?
     var pareq: String?
     var authenticationTransactionId: String?
-    var messageCategory: String
+    var messageCategory: String?
     var version: String?
     var status: EnrollStatus?
-    var returnCode: String
-    var returnMessage: String
+    var returnCode: String?
+    var returnMessage: String?
     var authentication: EnrollAuthentication?
     
-    init(cardBrand: Int,
+    init(cardBrand: Int?,
          vEResEnrolled: String?,
          acsUrl: String?,
          pareq: String?,
          authenticationTransactionId: String?,
-         messageCategory: String,
+         messageCategory: String?,
          version: String?,
          status: EnrollStatus?,
-         returnCode: String,
-         returnMessage: String,
+         returnCode: String?,
+         returnMessage: String?,
          enrollAuthentication: EnrollAuthentication?) {
         
         self.cardBrand = cardBrand

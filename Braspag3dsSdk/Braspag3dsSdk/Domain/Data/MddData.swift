@@ -6,7 +6,7 @@
 //  Copyright © 2019 jnazario.com. All rights reserved.
 //
 
-public class MddData {
+public class MddData: Encodable {
     var mdd1: String?
     var mdd2: String?
     var mdd3: String?

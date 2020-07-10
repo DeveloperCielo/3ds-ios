@@ -6,7 +6,7 @@
 //  Copyright © 2019 jnazario.com. All rights reserved.
 //
 
-public class RecurringData {
+public class RecurringData: Encodable {
     var endDate: String?
     var frequency: RecurringFrequency?
     var originalPurchaseDate: String?

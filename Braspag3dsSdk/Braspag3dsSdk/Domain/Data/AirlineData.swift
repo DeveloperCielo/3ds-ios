@@ -6,7 +6,7 @@
 //  Copyright © 2019 jnazario.com. All rights reserved.
 //
 
-public class AirlineData {
+public class AirlineData: Encodable {
     var numberOfPassengers: Int?
     var billToPassportCountry: String?
     var billToPassportNumber: String?
