@@ -39,6 +39,23 @@ class Api: ApiProtocol {
         case .PUT: break
         case .DELETE: break
         }
+      
+      let sdkName = "3ds-iOS"
+              guard let bundle = Bundle(identifier: "com.jnazario.Braspag3dsSdk") else {
+                  completion(nil, "Não foi possível obter o número da versão para registro no servidor.")
+                  return
+              }
+              
+              guard let buildVersion = bundle.infoDictionary?["CFBundleShortVersionString"] as? String else {
+                  completion(nil, "Não foi possível obter o número da versão para registro no servidor.")
+                  return
+              }
+              
+              let credentials = parameters?["credentials"]
+              urlRequest?.allHTTPHeaderFields = [
+                  "Authorization": "Basic \(credentials ?? "")",
+                  "x-sdk-version": "\(sdkName)@\(buildVersion)"
+              ]
         
         if let myRequest = urlRequest {
             let task = session.dataTask(with: myRequest, completionHandler: { (result, _, error) in
